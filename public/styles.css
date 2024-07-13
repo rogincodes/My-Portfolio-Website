@@ -1,0 +1,752 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Kanit", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+  margin: 0;
+  background-color: #f8f8f8;
+}
+
+.header {
+  border-bottom: white solid 1px;
+  color: white;
+  display: grid;
+  grid-template-columns: 150px 1fr 1fr 150px;
+}
+
+.title {
+  grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  align-items: center;
+}
+
+.title h1 {
+  margin: 0px;
+  font-size: 1.4rem;
+}
+
+.navContainer {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  padding: 1.2rem 0;
+  margin: 0;
+}
+
+.nav li {
+  list-style-type: none;
+  font-size: 1.4rem;
+  margin-right: 15px;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav li a:hover {
+  color: #ff8c00;
+}
+
+.bg {
+  background-image: url(../images/gradient-dark-blue-futuristic-digital-background.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.home {
+  height: 95vh;
+  display: grid;
+  grid-template-columns: 150px 1fr 1fr 150px;
+  grid-template-rows: 1fr 1fr;
+  color: white;
+}
+
+.textContainer {
+  grid-area: 1 / 2 / 2 / 3;
+  width: 100%;
+  margin-top: auto;
+}
+
+.greetings {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #fff;
+}
+
+.name {
+  font-size: 3.4rem;
+  margin: 0;
+}
+
+.jobTitle {
+  font-size: 2rem;
+  margin: 0;
+  color: #ff8c00;
+  font-weight: 450;
+  padding-bottom: 10px;
+}
+
+.shortDesc {
+  font-size: 1.18rem;
+  font-weight: 300;
+  margin: 0;
+  color: #F3F7EC;
+}
+
+.imgContainer {
+  grid-area: 1 / 3 / 3 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myPicture {
+  border-radius: 50%;
+  margin-bottom: 100px;
+}
+
+.aboutMeButton {
+  grid-area: 2 / 2 / 3 / 3;
+  margin-top: 20px;
+}
+
+.button {
+  font-size: 1.5rem;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  width: 200px;
+  height: 60px;
+  border-radius: 50px;
+  border: none;
+  background-color: #00629a;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #ff8400;
+}
+
+.aboutMeIcon {
+  height: 19px;
+}
+
+.sectionAfterHome {
+  color: #333;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px 20px 50px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.label {
+  font-size: 4rem;
+  margin: 0px 0px 0px 20px;
+  color: #ff8400;
+}
+
+.projectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
+  margin-top: 20px;
+}
+
+.project {
+  flex-basis: 45%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project h2 {
+  margin: 15px 0px;
+  text-align: center;
+}
+
+.project p {
+  color: #666;
+  text-align: justify;
+  margin: 0px;
+  font-size: 1.18rem;
+  font-weight: 350;
+  padding: 0px 20px 20px 20px;
+}
+
+.project p a {
+  text-decoration: none;
+}
+
+.projectContainer img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.about {
+  flex-basis: 45%;
+  margin-right: 40px;
+}
+
+.aboutEducWE {
+  flex-basis: 100%;
+}
+
+.aboutHeading {
+  margin: 10px 0px 0px 25px;
+}
+
+.aboutContent {
+  margin: 0px 0px 0px 20px;
+  font-size: 1.18rem;
+  color: #666;
+  font-weight: 350;
+}
+
+.level {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #333;
+  font-weight: 450;
+  margin: 4px 0px 0px 45px;
+  font-size: 1.18rem;
+}
+
+.level h3 {
+  margin: 0px;
+}
+
+.level p {
+  margin: 0px;
+  color: #666;
+  font-weight: 300;
+}
+
+.year {
+  flex-basis: 14%;
+  font-size: 1.14rem;
+  padding-top: 1px;
+}
+
+.context {
+  flex-basis: 80%;
+}
+
+.context a {
+  text-decoration: none;
+}
+
+.tasks {
+  color: #666;
+  font-weight: 350;
+}
+
+.contactLabel {
+  text-align: center;
+  font-size: 4rem;
+  margin: 0px;
+  color: #ff8400;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.contactContainer {
+  flex-basis: 65%;
+}
+
+.contact p {
+  margin: 10px 0px 0px 0px;
+}
+
+.email {
+  margin: 11px 0rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.social-icons {
+  margin-top: .5rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: .3rem 1rem;
+  color: #333;
+  font-size: 1.5rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #ff8c00;
+}
+
+footer {
+  background-color: #00629a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 576px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .title {
+    text-align: center;
+    margin-top: .3rem;
+    color: #ff8c00;
+  }
+  
+  .title h1 {
+    font-size: .8rem;
+  }
+  
+  .navContainer {
+    flex-basis: 100%;
+  }
+
+  .nav {
+    justify-content: center;
+    padding: 0px 0px 7px 0px;
+  }
+
+  .nav li {
+    font-size: .8rem;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .textContainer {
+    text-align: center;
+    margin: 0;
+    width: 85%;
+  }
+
+  .imgContainer {
+    height: 280px;
+  }
+  
+  .myPicture {
+    height: 210px;
+    margin: 0px;
+  }
+  
+  .greetings {
+    font-size: .9rem;
+  }
+  
+  .name {
+    font-size: 2rem;
+  }
+  
+  .jobTitle {
+    font-size: 1.2rem;
+    padding: 0 0 7px 0;
+  }
+
+  .shortDesc {
+    font-size: .7rem;
+  }
+
+  .aboutMeButton {
+    padding: .9rem 0;
+    margin: 0;
+  }
+
+  .button {
+    font-size: 1.2rem;
+    width: 180px;
+    height: 50px;
+  }
+
+  .aboutMeIcon {
+    height: 16px;
+  }
+  
+  .label {
+    font-size: 2.5rem;
+    margin: 0;
+    text-align: center;
+  }
+
+  .project {
+    flex-basis: 90%;
+  }
+  
+  .project p {
+    font-size: 1rem;
+  }
+
+  .about {
+    flex-basis: 90%;
+  }
+  
+  .aboutContent {
+    font-size: 1rem;
+  }
+
+  .level {
+    font-size: 1rem;
+  }
+
+  .year {
+    flex-basis: 16%;
+  }
+  
+  .context {
+    flex-basis: 75%;
+  }
+
+  .contact {
+    font-size: 1rem;
+  }
+
+  .contactContainer {
+    flex-basis: 81%;
+  }
+
+  .contactLabel {
+    font-size: 2.5rem;
+  }
+
+  .email {
+    margin: 8px 0 0 0;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .title {
+    text-align: center;
+    margin-top: .6rem;
+    color: #ff8c00;
+  }
+  
+  .title h1 {
+    font-size: 1.1rem;
+  }
+  
+  .navContainer {
+    flex-basis: 100%;
+  }
+
+  .nav {
+    justify-content: center;
+    padding: 0px 0px 10px 0px;
+  }
+
+  .nav li {
+    font-size: 1.1rem;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .textContainer {
+    text-align: center;
+    margin: 0;
+  }
+  
+  .imgContainer {
+    margin-top: 10px;
+    height: 290px;
+  }
+  
+  .myPicture {
+    height: 240px;
+    margin: 0;
+  }
+  
+  .greetings {
+    font-size: .9rem;
+  }
+  
+  .name {
+    font-size: 3rem;
+    height: 68px;
+  }
+  
+  .jobTitle {
+    font-size: 1.6rem;
+    padding: 3px 0 5px 0;
+  }
+
+  .shortDesc {
+    font-size: .9rem;
+  }
+
+  .aboutMeButton {
+    padding: 1.4rem 0;
+    margin: 0;
+  }
+
+  .button {
+    font-size: 1.2rem;
+    width: 180px;
+    height: 50px;
+  }
+
+  .aboutMeIcon {
+    height: 16px;
+  }
+
+  .label {
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+  }
+
+  .project {
+    flex-basis: 90%;
+  }
+
+  .about {
+    flex-basis: 90%;
+  }
+
+  .contactLabel {
+    font-size: 3rem;
+  }
+}
+
+/* Medium devices (md) */
+@media (min-width: 768px) {
+  .title {
+    margin-top: 1rem;
+  }
+  
+  .title h1 {
+    font-size: 1.4rem;
+  }
+
+  .nav {
+    padding: 5px 0px 15px 0px;
+  }
+
+  .nav li {
+    font-size: 1.4rem;
+  }
+
+  .imgContainer {
+    height: 370px;
+    margin: 0;
+  }
+  
+  .myPicture {
+    height: 290px;
+    margin: 0;
+  }
+  
+  .greetings {
+    font-size: 1rem;
+  }
+
+  .name {
+    font-size: 3.4rem;
+    height: 75px;
+  }
+  
+  .jobTitle {
+    font-size: 2rem;
+    padding: 2px 0;
+  }
+
+  .shortDesc {
+    font-size: 1.18rem;
+  }
+
+  .aboutMeButton {
+    padding: 1rem 0;
+  }
+
+  .button {
+    font-size: 1.5rem;
+    width: 200px;
+    height: 60px;
+  }
+
+  .aboutMeIcon {
+    height: 19px;
+  }
+
+  .label {
+    font-size: 4rem;
+  }
+
+  .project {
+    flex-basis: 45%;
+  }
+
+  .about {
+    flex-basis: 42%;
+  }
+  
+  .year {
+    flex-basis: 16%;
+    padding-top: 1px;
+  }
+
+  .contactContainer {
+    flex-basis: 81%;
+  }
+
+  .contactLabel {
+    font-size: 4rem;
+  }
+}
+
+/* Large devices (lg) */
+@media (min-width: 992px) {
+  .header {
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 50px;
+  }
+
+  .title {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: #fff;
+  }
+
+  .navContainer {
+    grid-area: 1 / 3 / 2 / 4;
+    flex-basis: unset;
+  }
+
+  .nav {
+    justify-content: flex-end;
+    padding: 1.2rem 0;
+  }
+
+  .home {
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 50px;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .textContainer {
+    grid-area: 1 / 2 / 2 / 3;
+    width: 100%;
+    margin-top: auto;
+    text-align: left;
+  }
+
+  .imgContainer {
+    height: auto;
+  }
+  
+  .myPicture {
+    height: 390px;
+    margin-bottom: 100px;
+  }
+
+  .greetings {
+    font-size: 1.2rem;
+  }
+
+  .name {
+    height: 72px;
+  }
+  
+  .jobTitle {
+    padding-bottom: 5px;
+  }
+  
+  .aboutMeButton {
+    margin: 20px 0px auto 0px;
+    padding: 0;
+  }
+  
+  .label {
+    margin: 0px 0px 0px 25px;
+    text-align: unset;
+  }
+
+  .about {
+    flex-basis: 45%;
+  }
+
+  .year {
+    flex-basis: 14%;
+  }
+
+  .contactContainer {
+    flex-basis: 65%;
+  }
+}
+
+/* Extra large devices (xl) */
+@media (min-width: 1200px) {
+  .header {
+    grid-template-columns: 100px 1fr 1fr 100px;
+  }
+
+  .home {
+    grid-template-columns: 100px 1fr 1fr 100px;
+  }
+  
+  .myPicture {
+    height: auto;
+  }
+}
+
+/* Extra extra large devices (xxl) */
+@media (min-width: 1400px) {
+  .header {
+    grid-template-columns: 150px 1fr 1fr 150px;
+  }
+
+  .home {
+    grid-template-columns: 150px 1fr 1fr 150px;
+  }
+}
