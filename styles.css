@@ -418,12 +418,18 @@ footer {
   .about {
     flex-basis: 90%;
   }
+
+  .aboutHeading {
+    margin: 10px 0px 0px 15px;
+  }
   
   .aboutContent {
+    margin: 0px 0px 0px 10px;
     font-size: 1rem;
   }
 
   .level {
+    margin: 4px 0px 0px 35px;
     font-size: 1rem;
   }
 
