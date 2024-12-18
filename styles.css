@@ -314,8 +314,6 @@ footer {
   background-color: #00629a;
   color: #fff;
   text-align: center;
-  padding: 1em 0;
-  font-size: 1.2rem;
 }
 
 @media (max-width: 576px) {
@@ -433,6 +431,10 @@ footer {
   .year {
     flex-basis: 16%;
   }
+
+  .tasks {
+    padding-left: 30px;
+  }
   
   .context {
     flex-basis: 75%;
@@ -453,6 +455,11 @@ footer {
   .email {
     margin: 8px 0 0 0;
     font-size: 1.5rem;
+  }
+
+  footer {
+    padding: 1rem 0;
+    font-size: 16px;
   }
 }
 
@@ -552,6 +559,11 @@ footer {
 
   .contactLabel {
     font-size: 3rem;
+  }
+
+  footer {
+    padding: 1rem 0;
+    font-size: 16px;
   }
 }
 
@@ -720,6 +732,11 @@ footer {
 
   .contactContainer {
     flex-basis: 63%;
+  }
+
+  footer {
+    padding: 16px 0;
+    font-size: 18px;
   }
 }
 
