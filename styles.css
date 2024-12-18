@@ -207,8 +207,8 @@ body {
 }
 
 .about {
-  flex-basis: 45%;
-  margin-right: 40px;
+  flex-basis: 50%;
+  
 }
 
 .aboutEducWE {
@@ -326,13 +326,7 @@ footer {
   }
   
   .title {
-    text-align: center;
-    margin-top: .3rem;
-    color: #ff8c00;
-  }
-  
-  .title h1 {
-    font-size: .8rem;
+    display: none;
   }
   
   .navContainer {
@@ -341,11 +335,10 @@ footer {
 
   .nav {
     justify-content: center;
-    padding: 0px 0px 7px 0px;
   }
 
   .nav li {
-    font-size: .8rem;
+    font-size: 1.2rem;
   }
 
   .home {
@@ -417,7 +410,8 @@ footer {
   }
 
   .about {
-    flex-basis: 90%;
+    flex-basis: 100%;
+    margin-right: 0;
   }
 
   .aboutHeading {
@@ -468,13 +462,7 @@ footer {
   }
   
   .title {
-    text-align: center;
-    margin-top: .6rem;
-    color: #ff8c00;
-  }
-  
-  .title h1 {
-    font-size: 1.1rem;
+    display: none;
   }
   
   .navContainer {
@@ -483,11 +471,10 @@ footer {
 
   .nav {
     justify-content: center;
-    padding: 0px 0px 10px 0px;
   }
 
   .nav li {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .home {
@@ -500,6 +487,7 @@ footer {
   .textContainer {
     text-align: center;
     margin: 0;
+    width: 85%;
   }
   
   .imgContainer {
@@ -556,7 +544,7 @@ footer {
   }
 
   .about {
-    flex-basis: 90%;
+    flex-basis: 100%;
   }
 
   .contactLabel {
@@ -566,18 +554,6 @@ footer {
 
 /* Medium devices (md) */
 @media (min-width: 768px) {
-  .title {
-    margin-top: 1rem;
-  }
-  
-  .title h1 {
-    font-size: 1.4rem;
-  }
-
-  .nav {
-    padding: 5px 0px 15px 0px;
-  }
-
   .nav li {
     font-size: 1.4rem;
   }
@@ -665,6 +641,10 @@ footer {
     color: #fff;
   }
 
+  .title h1 {
+    font-size: 1.4rem;
+  }
+
   .navContainer {
     grid-area: 1 / 3 / 2 / 4;
     flex-basis: unset;
@@ -720,7 +700,7 @@ footer {
   }
 
   .about {
-    flex-basis: 44.5%;
+    flex-basis: 49%;
   }
 
   .year {
