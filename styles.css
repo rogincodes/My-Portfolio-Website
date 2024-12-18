@@ -43,7 +43,7 @@ body {
 .nav li {
   list-style-type: none;
   font-size: 1.4rem;
-  margin-right: 15px;
+  padding: 0 10px;
 }
 
 .nav li a {
@@ -340,6 +340,7 @@ footer {
 
   .nav li {
     font-size: 14px;
+    padding: 0 6px;
   }
 
   .home {
